@@ -1,0 +1,7 @@
+Make a pipeline to call germline variants (Indel and SNP)
+-input: raw fastq files from illumina reads
+-process: include fastqc quality check, bwa mapping, reads deduplication and pre-processing for GATK4, GATK hyplotypecaller, VSQR for variants filtration. 
+-output: VCF files for the combined input samples
+-todo: include hardfilter instead of VSQR incase the read depth is low, incooperat other sequencing type, ie., WES, Gene panel. 
+
+-method: will use snakemake to make the pipelines.  
